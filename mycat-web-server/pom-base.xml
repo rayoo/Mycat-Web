@@ -296,6 +296,11 @@
 			<groupId>json</groupId>
 			<artifactId>json</artifactId>
 		</dependency>
+		<dependency>
+		       <groupId>com.systoon</groupId>
+		      <artifactId>integration-client</artifactId>
+		      <version>3.0.0</version>
+		</dependency>
 	</dependencies>
 
 

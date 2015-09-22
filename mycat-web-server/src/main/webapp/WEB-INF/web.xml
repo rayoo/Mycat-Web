@@ -254,6 +254,24 @@
 		<url-pattern>/jrds/discoverhtml</url-pattern>
 	</servlet-mapping>
 	
+	 <filter>
+        <filter-name>SecurityFilter</filter-name>
+        <filter-class>com.systoon.integration.client.security.filter.SecurityFilter</filter-class>
+        <init-param>
+            <param-name>PlatformName</param-name>
+            <param-value>mycatweb</param-value> <!-- 平台名称(必须配置项) -->
+        </init-param>
+        <init-param>
+            <param-name>ExcludeUrl</param-name>
+            <param-value>*.css,/font,*.jpg,*.png,*.js,/ui</param-value> <!-- 设置不拦截的url,注意格式 -->
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>SecurityFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+	<!-- 权限拦截  end -->
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>

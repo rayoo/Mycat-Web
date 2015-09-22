@@ -22,7 +22,7 @@
 		<mvn.jdbc.username></mvn.jdbc.username>
 		<mvn.jdbc.password></mvn.jdbc.password>
 		
-		<mvn.logpath>/save/saveview/log</mvn.logpath>
+		<mvn.logpath>/home/logs</mvn.logpath>
 	</properties>
 
 </project>
